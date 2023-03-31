@@ -292,35 +292,7 @@ function Home() {
     },
   ];
 
-  const timelineList = [
-    {
-      title: "$2,400 - Redesign store",
-      time: "09 JUN 7:20 PM",
-      color: "green",
-    },
-    {
-      title: "New order #3654323",
-      time: "08 JUN 12:20 PM",
-      color: "green",
-    },
-    {
-      title: "Company server payments",
-      time: "04 JUN 3:10 PM",
-    },
-    {
-      title: "New card added for order #4826321",
-      time: "02 JUN 2:45 PM",
-    },
-    {
-      title: "Unlock folders for development",
-      time: "18 MAY 1:30 PM",
-    },
-    {
-      title: "New order #46282344",
-      time: "14 MAY 3:30 PM",
-      color: "gray",
-    },
-  ];
+ 
 
   const uploadProps = {
     name: "file",
@@ -373,7 +345,7 @@ function Home() {
           ))}
         </Row>
 
-        <Row gutter={[24, 0]}>
+        {/* <Row gutter={[24, 0]}>
           <Col xs={24} sm={24} md={12} lg={12} xl={10} className="mb-24">
             <Card bordered={false} className="criclebox h-full">
               <Echart />
@@ -384,10 +356,9 @@ function Home() {
               <LineChart />
             </Card>
           </Col>
-        </Row>
+        </Row> */}
 
-        <Row gutter={[24, 0]}>
-          <Col xs={24} sm={24} md={12} lg={12} xl={16} className="mb-24">
+
             <Card bordered={false} className="criclebox cardbody h-full">
               <div className="project-ant">
                 <div>
@@ -455,8 +426,7 @@ function Home() {
                 </Upload>
               </div>
             </Card>
-          </Col>
-          <Col xs={24} sm={24} md={12} lg={12} xl={8} className="mb-24">
+          {/* <Col xs={24} sm={24} md={12} lg={12} xl={8} className="mb-24">
             <Card bordered={false} className="criclebox h-full">
               <div className="timeline-box">
                 <Title level={5}>Orders History</Title>
@@ -485,11 +455,9 @@ function Home() {
                 </Button>
               </div>
             </Card>
-          </Col>
-        </Row>
+          </Col> */}
 
-        <Row gutter={[24, 0]}>
-          <Col xs={24} md={12} sm={24} lg={12} xl={14} className="mb-24">
+
             <Card bordered={false} className="criclebox h-full">
               <Row gutter>
                 <Col
@@ -531,9 +499,8 @@ function Home() {
                 </Col>
               </Row>
             </Card>
-          </Col>
 
-          <Col xs={24} md={12} sm={24} lg={12} xl={10} className="mb-24">
+          {/* <Col xs={24} md={12} sm={24} lg={12} xl={10} className="mb-24">
             <Card bordered={false} className="criclebox card-info-2 h-full">
               <div className="gradent h-full col-content">
                 <div className="card-content">
@@ -551,8 +518,7 @@ function Home() {
                 </div>
               </div>
             </Card>
-          </Col>
-        </Row>
+          </Col> */}
       </div>
     </>
   );
